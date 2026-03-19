@@ -74,4 +74,4 @@ The webpage is divided into the following main sections:
 ### 3. Footer
 
 * Contains contact information.
-* Includes a clickable email link using: <a href="mailto:info@laundrymart.com">
+* Includes a clickable email link.
