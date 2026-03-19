@@ -1,4 +1,3 @@
-
 # Task 2: HTML
 
 Laundry wallah / Laundry Mart, a premier laundry service, is enhancing its online presence through a HTML webpage. The HTML code serves as a foundation for a user-friendly and visually appealing site. Web Page is about creating a seamless digital experience, showcasing services, pricing, and easy navigation.
@@ -38,6 +37,7 @@ The webpage is divided into the following main sections:
     * Express Services
     * Special Garment Care
 * Implemented using:
+    ```html
     * <section>
     * <ul> (unordered list)
     * <li> (list items)
@@ -49,6 +49,7 @@ The webpage is divided into the following main sections:
     * Service names
     * Corresponding prices
 * HTML elements used:
+    ```html
     * <table>
     * <tr> (table rows)
     * <th> (table headers)
@@ -67,6 +68,7 @@ The webpage is divided into the following main sections:
     * All fields are required
     * Submit button for form submission
 * HTML elements used:
+    ```html
     * <form>
     * <label>
     * <input>
@@ -74,4 +76,6 @@ The webpage is divided into the following main sections:
 ### 3. Footer
 
 * Contains contact information.
-* Includes a clickable email link.
+* Includes a clickable email link by using:
+```html
+<a href="mailto:info@laundrymart.com">
