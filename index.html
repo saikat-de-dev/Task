@@ -1,67 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "utf-8">
-        <title>Task 2: HTML</title>
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to Laundry Wallah / Laundry Mart</h1>
-            <p>Laundry Wallah / Laundry Mart is a modern laundry service designed to provide convenient, affordable, and high-quality cleaning solutions for everyday clothing and household fabrics. It caters to busy individuals and families by offering services such as washing, dry cleaning, ironing, and doorstep pickup and delivery. With a focus on efficiency and hygiene, it uses advanced equipment and quality detergents to ensure garments are well cared for. The service often emphasizes quick turnaround times and customer-friendly pricing. By combining traditional laundry care with technology-driven convenience, Laundry Wallah / Laundry Mart aims to simplify daily chores. It is especially popular in urban areas where time-saving services are in high demand.</p>
-        </header>
-        <main>
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/721/193/small/washing-machine-and-laundry-laundry-sticker-png.png" alt="Laundry" title="Laundry" height="300" width="300" />
-            <section id="services">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Washing and Drying</li>
-                    <li>Ironing and Folding</li>
-                    <li>Dry cleaning</li>
-                    <li>Stain Removal</li>
-                    <li>Express Services</li>
-                    <li>Special Garment Care</li>
-                    <li>And more...</li>
-                </ul>
-            </section>
-            <section id="pricing">
-                <h2>Price List</h2>
-                <table border="">
-                    <thead>
-                        <tr>
-                            <th>Service</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Washing and Drying</td>
-                            <td>Rs 10.00</td>
-                        </tr>
-                        <tr>
-                            <td>Ironing and Folding</td>
-                            <td>Rs 5.00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section id="booking">
-                <h2>Book Now</h2>
-                    <form action="">
-                    <label for="userName">Name:</label>
-                    <input type="text" name="userName" id="userName" required/>
-                    <br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required/>
-                    <br><br>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" required/>
-                    <br><br>
-                    <input type="submit"/>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>Contact us at: <a href="mailto:info@laundrymart.com">info@laundrymart.com</a></p>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task: CSS Selectors</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1 class="head">This is a h1 heading with head as a class.</h1>
+        <h2 class="head" id="bglime">This is a h2 heading with <span>"head"</span> as a class and "bglime" as an id.</h2>
+        <h3 class="head">This is a h3 heading with head as a class.</h3>
+    </header>
+    <main>
+        <p>This is a p paragraph tag without any id or class styled using "p" element selector.</p>
+        <p id="para">This is a <span>paragraph</span> tag with para as an id.</p>
+        <p>This is a p paragraph tag without any id or class styled using "p" element selector.</p>
+        <section>
+            <p>Show this output without inline css nor using class or id without "a" tag.</p>
+            <ul>
+                <li>Click <a href="https://upskillmafia.com">here</a> to go to UpskillMafia</li>
+                <li>Click <a href="https://www.google.com">here</a> to go to Google</li>
+            </ul>
+            <ol>
+                <li>This is an li tag without any id or class</li>
+                <li>This is an li tag without any id or class and is in blue in colour</li>
+                <li>This is an li tag without any id or class and is in red in colour</li>
+                <li>This is an li tag without any id or class</li>
+                <li>This is an li tag without any id or class</li>
+            </ol>
+        </section>
+    </main>
+</body>
 </html>
