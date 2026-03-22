@@ -1,52 +1,46 @@
-body{
-    background-color: coral;
+/* Resetting default margins and ensuring box-sizing is handled properly */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.head{
- color: darkblue;
+body {
+    /* Using Viewport units for exact spacing without scrolling */
+    /* 10% top/bottom and 25% left/right spacing */
+    padding: 10vh 25vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-#bglime{
-    background-color: lime;
+div {
+    /* The container fills the remaining space: 100% - (25%*2) = 50% width */
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    background-color: white;
 }
 
-#bglime span{
-    color: red;
+img {
+    display: block;
+    width: 100%;
+    height: 80%; /* Reserving space for the button below */
+    object-fit: cover;
 }
 
-p{
+button {
+    display: block;
+    width: 100%;
+    height: 20%;
+    border: none;
+    cursor: pointer;
+    
+    /* Font settings */
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
     color: white;
-}
 
-#para{
-    color: green;
-}
-
-#para span{
-    color: black;
-    font-size: large;
-}
-
-section p{
-    color: black;
-}
-
-ul{
-    color: white;
-}
-
-ul li:first-child a{
-    background-color: yellow;
-}
-
-ul li:last-child a{
-    background-color: lightblue;
-}
-
-ol li:nth-child(2){
-    color: blue;
-}
-
-ol li:nth-child(3){
-    color: red;
+    /* Gradient background: Yellow to Green */
+    background: linear-gradient(to right, #ffcc00, #33cc33);
 }
