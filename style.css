@@ -1,46 +1,35 @@
-/* Resetting default margins and ensuring box-sizing is handled properly */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    /* Using Viewport units for exact spacing without scrolling */
-    /* 10% top/bottom and 25% left/right spacing */
+div {
     padding: 10vh 25vw;
     width: 100vw;
     height: 100vh;
-    background-color: #f0f0f0;
-}
-
-div {
-    /* The container fills the remaining space: 100% - (25%*2) = 50% width */
-    width: 100%;
-    height: 100%;
-    border: 1px solid #333;
-    background-color: white;
 }
 
 img {
     display: block;
     width: 100%;
-    height: 80%; /* Reserving space for the button below */
-    object-fit: cover;
+    height: 80%;
 }
 
 button {
-    display: block;
+   display: block;
     width: 100%;
     height: 20%;
     border: none;
     cursor: pointer;
-    
-    /* Font settings */
-    font-family: Arial, sans-serif;
-    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
     color: white;
+    background: linear-gradient(to right, yellow, green);
+}
 
-    /* Gradient background: Yellow to Green */
-    background: linear-gradient(to right, #ffcc00, #33cc33);
+button:hover {
+    opacity: 0.8;
 }
