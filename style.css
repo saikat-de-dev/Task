@@ -4,83 +4,82 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid blue; */
+    overflow: hidden;
 }
 
 body{
-    height: 100vh;
-    overflow: hidden;
-    font-family: "Jost", sans-serif;
+    font-family: "jost";
 }
 
 .nav{
     height: 10vh;
-    padding: 20px 50px;
-}
-
-.logo, .menu li, .user, .menu{
-    display: inline-block;
+    display: flex;
 }
 
 .logo{
-    height: 100%;
-    width: 19.5%;
+    width: 20vw;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
     font-size: 25px;
 }
 
 .menu{
-    height: 100%;
-    width: 60%;
+    width: 60vw;
     list-style: none;
-    text-align: center;
-    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 
 .menu li{
-    margin: 0 4vw;
     cursor: pointer;
 }
 
 .user{
-    height: 100%;
-    width: 19.5%;
-    text-align: right;
+    width: 20vw;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .user span{
     padding: 10px 20px;
+    border-radius: 10px;
     color: #1e90ff;
     background-color: #e9f2fc;
-    border-radius: 10px;
     cursor: pointer;
 }
 
 .hero{
     height: 90vh;
+    display: flex;
 }
 
 .left, .right{
-    width: 49.5%;
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 30px;   
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.lp{
-    position: relative;
-    top: 15vh;
+.left{
+    padding: 100px;
 }
 
-img{
-    width: 100%;
-    position: relative;
-    top: 20vh;
+p, button{
+    font-size: 20px;
+}
+
+.right img{
+    width: 90%;
 }
 
 h1{
-    display: inline-block;
-    position: relative;
-    left: 80px;
+    font-size: 55px;
     line-height: 70px;
 }
 
@@ -88,17 +87,81 @@ h1 span{
     color: #1e90ff;
 }
 
-p, button{
-    position: relative;
-    left: 80px;
-    font-size: 20px;
-}
-
 button{
     padding: 20px 30px;
-    color: white;
-    background-color: #1e90ff;
+    margin-top: 10px;
     border: 0;
     border-radius: 10px;
+    color: white;
+    background-color: #1e90ff;
     cursor: pointer;
+}
+
+@media (width <= 768px) {
+    .left{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .menu{
+        gap: 25px;
+    }
+
+    .user{
+        padding: 0;
+        margin: 0 50px 0 0;
+    }
+
+    .right img{
+        width: 100%;
+    }
+
+    button{
+        font-size: 17px;
+        border-radius: 20px;
+    }
+}
+
+@media (width <= 426px) {
+    .menu{
+        width: 0;
+    }
+
+    .logo{
+        width: 50vw;
+        padding: 0 0 0 15px;
+    }
+
+    .user{
+        width: 50vw;
+        padding: 0 15px 0 0;
+        margin: 0;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .left, .right{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    button{
+        padding: 15px 25px;
+        border-radius: 10px;
+    }
+
+    h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    p{
+        font-size: 16px;
+    }
 }
